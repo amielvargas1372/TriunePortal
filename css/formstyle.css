@@ -1,0 +1,163 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 15, 2017, 3:45:37 PM
+    Author     : Amiel
+*/
+html{
+    box-sizing: border-box;
+}
+header{
+    display: block;
+    background: #d7b740;
+    font-family: "Times New Roman", Arial;
+    font-weight: bold;
+    color: #00562e;   
+    border: 1px solid #d7b740;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+}
+body{
+    margin: auto;
+}
+form {
+    margin: 0 auto;
+    width: 250px;
+}
+a:link {
+    background-color: red;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.link{
+    color: white;
+}
+a:hover, a:active{
+    background-color: #ff6666;
+    color: white;
+}
+.btns {
+    text-align: center;
+}
+select{
+    width: 300px;
+    height: 50px;
+}
+
+.buttonholder{
+    text-align: center;
+}
+.buttonprq{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: orange;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buttoncrq{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: lightblue;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buttonprq span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+.buttoncrq span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;    
+}
+
+.buttonprq span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+.buttoncrq span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+.buttonprq:hover span{
+    padding-right: 25px;
+}
+
+.buttoncrq:hover span{
+    padding-right: 25px;
+}
+
+.buttonprq:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+.buttoncrq:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+#submitreqprq{
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    width: 110%;
+}
+
+#submitreqcrq{
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    width: 110%;
+}
+
+:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
